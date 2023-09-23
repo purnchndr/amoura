@@ -1,0 +1,19 @@
+.mainCntnr {
+  padding-top: 20px;
+  background-color: var(--clr-bg);
+  /* margin-bottom: 40px; */
+}
+.information {
+  color: var(--clr-primary);
+  text-align: center;
+  font-size: large;
+  font-weight: 300;
+}
+
+.products {
+  display: flex;
+  overflow: scroll;
+  justify-content: start;
+  background-color: var(--clr-bg);
+  overflow-y: hidden;
+}

@@ -1,0 +1,49 @@
+.productCard {
+  height: 600px;
+  width: 350px;
+  background-color: var(--clr-bg);
+  display: inline-block;
+  margin: 10px 20px;
+}
+
+.productImageCntnr {
+  display: inline-block;
+  height: 450px;
+}
+
+.productImage {
+  width: 350px;
+  height: 450px;
+  border-radius: 1rem;
+}
+.productDetails {
+  padding: 2%;
+  text-align: center;
+}
+.name {
+  font-weight: 100;
+}
+
+.color {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 3px;
+}
+
+@media screen and (max-width: 800px) {
+  .productCard {
+    height: 450px;
+    width: 250px;
+  }
+
+  .productImageCntnr {
+    height: 300px;
+  }
+
+  .productImage {
+    width: 250px;
+    height: 300px;
+  }
+}

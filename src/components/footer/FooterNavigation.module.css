@@ -1,0 +1,36 @@
+.footerMobile {
+  background-color: var(--clr-bg);
+  color: var(--clr-primary);
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  margin-top: 50px;
+  border-top: 2px solid var(--clr-primary);
+  padding: 10px 0;
+  line-height: 1.5;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer {
+  background-color: var(--clr-bg);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 800px) {
+  .footerMobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .footer {
+    display: none;
+  }
+}
