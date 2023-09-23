@@ -6,10 +6,8 @@ function App() {
     <>
       <BrowserRouter basename="/">
         <Routes>
-          <Route path="/" element={<p>Home</p>}>
-            <Route path="hoho" element={<p>Hohohoohooh</p>} />
-          </Route>
-          <Route path="/shop" element={<AmouraShopping />} />
+          <Route path="/" element={<p>Home</p>}></Route>
+          <Route path="shop" element={<AmouraShopping />} />
         </Routes>
       </BrowserRouter>
     </>
