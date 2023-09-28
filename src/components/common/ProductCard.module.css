@@ -32,6 +32,18 @@
   margin: 0 3px;
 }
 
+/* .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} */
+.size {
+  display: inline-block;
+  margin: 1px 3px;
+  padding: 2px;
+  /* border: 1px solid var(--clr-prim ary); */
+}
+
 @media screen and (max-width: 800px) {
   .productCard {
     height: 450px;

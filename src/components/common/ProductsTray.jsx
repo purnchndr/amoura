@@ -9,6 +9,7 @@ const data = [
     stock: 20,
     price: 999,
     id: "T120",
+    sizes: ["S", "M", "L", "XL", "XXL"],
   },
   {
     img: "https://hebeboutique.com/cdn/shop/files/oversizedvnecktop_white_0109_1800x1800.jpg?v=1694045184",
@@ -17,6 +18,7 @@ const data = [
     stock: 5,
     price: 1499,
     id: "SRT120",
+    sizes: ["S", "M", "L", "XL", "XXL"],
   },
   {
     img: "https://hebeboutique.com/cdn/shop/files/IMG_4735_1800x1800.webp.jpg?v=1694138851",
@@ -25,6 +27,7 @@ const data = [
     stock: 20,
     price: 999,
     id: "T120",
+    sizes: ["S", "M", "L", "XL", "XXL"],
   },
   {
     img: "https://hebeboutique.com/cdn/shop/files/IMG_4872_1800x1800.webp.jpg?v=1695000973",
@@ -33,6 +36,7 @@ const data = [
     stock: 20,
     price: 999,
     id: "T120",
+    sizes: ["S", "M", "L", "XL", "XXL"],
   },
   {
     img: "https://hebeboutique.com/cdn/shop/files/IMG_4872_1800x1800.webp.jpg?v=1695000973",
@@ -41,6 +45,7 @@ const data = [
     stock: 20,
     price: 999,
     id: "T120",
+    sizes: ["S", "M", "L", "XL", "XXL"],
   },
   {
     img: "https://hebeboutique.com/cdn/shop/files/IMG_4872_1800x1800.webp.jpg?v=1695000973",
@@ -49,6 +54,7 @@ const data = [
     stock: 20,
     price: 999,
     id: "T120",
+    sizes: ["S", "M", "L", "XL", "XXL"],
   },
   {
     img: "https://hebeboutique.com/cdn/shop/files/IMG_4872_1800x1800.webp.jpg?v=1695000973",
@@ -57,6 +63,7 @@ const data = [
     stock: 20,
     price: 999,
     id: "T120",
+    sizes: ["S", "M", "L", "XL", "XXL"],
   },
 ];
 
@@ -76,6 +83,7 @@ function ProductsTray({ heading, text }) {
             color={curr.color}
             stock={curr.stock}
             price={curr.price}
+            sizes={curr.sizes}
             id={curr.id}
           />
         ))}

@@ -1,12 +1,9 @@
-import { Link } from "react-router-dom";
-
 import "react-slideshow-image/dist/styles.css";
-import image from "../../assets/img/poster.webp";
 
 import styles from "./Product.module.css";
 import Slideshow from "../common/SlideShow";
-import ProductCard from "../common/ProductCard";
 import ProductsTray from "../common/ProductsTray";
+import Categories from "../Catagories";
 
 function Products() {
   const img =
@@ -21,37 +18,10 @@ function Products() {
           text="Just som random text ........"
         />
       </section>
-      <img src={image} width="100%" />
+      <img src={img} width="100%" />
     </main>
   );
 }
-
-const Categories = () => {
-  return (
-    <section>
-      <div className={styles.categoriesSection}>
-        <div className={styles.categoriesCntnr}>
-          <Link to="identity">Amoura Identity</Link>
-        </div>
-        <div className={styles.categoriesCntnr}>
-          <Link to="luxe">Amoura Luxe</Link>
-        </div>
-        <div className={styles.categoriesCntnr}>
-          <Link to="anime">Amoura Anime</Link>
-        </div>
-        <div className={styles.categoriesCntnr}>
-          <Link to="comic">Amoura Comic</Link>
-        </div>
-        <div className={styles.categoriesCntnr}>
-          <Link to="clothing">Amoura clothing</Link>
-        </div>
-        <div className={styles.categoriesCntnr}>
-          <Link to="acessories">Amoura Acessories</Link>
-        </div>
-      </div>
-    </section>
-  );
-};
 
 const MainSlideShow = () => {
   const slideItems = [

@@ -1,0 +1,39 @@
+.color {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 3px;
+}
+
+.productPage {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 10px;
+}
+
+.imgCntnr {
+  display: flex;
+  align-items: center;
+}
+
+.navImg {
+  width: 100px;
+  height: 100px;
+}
+
+.navImgCntnr {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  width: fit-content;
+  background-color: black;
+}
+
+.mainImgCntnr {
+  display: inline-block;
+}
+
+.mainImg {
+  width: 500px;
+}

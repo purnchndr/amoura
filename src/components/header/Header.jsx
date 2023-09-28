@@ -45,28 +45,28 @@ function Header() {
     <header className="header">
       <div className="nav-links">
         <div className="logo-cntnr">
-          <NavLink className="nav-link logo" to="/">
+          <NavLink className="nav-link logo" to="/shop">
             <span className="logo-text">AMOURA</span>
           </NavLink>
         </div>
 
         <div className="links-cntnr nav-section">
-          <NavLink className="nav-link" to="/he">
+          <NavLink className="nav-link" to="/shop/he">
             <span className="nav-text">For Him</span>
           </NavLink>
-          <NavLink className="nav-link" to="/she">
+          <NavLink className="nav-link" to="/shop/she">
             <span className="nav-text">For Her</span>
           </NavLink>
-          <NavLink className="nav-link" to="/they">
+          <NavLink className="nav-link" to="/shop/they">
             <span className="nav-text">For Them</span>
           </NavLink>
         </div>
 
         <div className="icon-cntnr nav-section">
-          <NavLink className="nav-link" to="cart">
+          <NavLink className="nav-link" to="/shop/cart">
             <img src={cart} className="icon" alt="shopping cart" />
           </NavLink>
-          <NavLink className="nav-link" to="profile">
+          <NavLink className="nav-link" to="/shop/profile">
             <img src={profile} className="icon" alt="user profile" />
           </NavLink>
         </div>
