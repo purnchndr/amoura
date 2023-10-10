@@ -15,7 +15,7 @@ function Products() {
         <MainSlideShow />
         <ProductsTray
           heading="Special for You"
-          text="Just som random text ........"
+          text=" look smarter with these handpicked for you........"
         />
       </section>
       <img src={img} width="100%" />

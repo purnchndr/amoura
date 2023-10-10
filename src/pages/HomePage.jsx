@@ -8,8 +8,8 @@ function HomePage() {
     <>
       <Header />
       <Categories />
-      <h1>His site is under development</h1>
-      <p>Please Visit our shop section to purchage producs</p>
+      <h1>This site is under development</h1>
+      <p>Please Visit our shop section to purchage products</p>
 
       <Link to="/shop">Click here to visit Shopping page</Link>
 

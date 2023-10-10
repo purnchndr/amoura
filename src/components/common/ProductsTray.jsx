@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import ProductCard from "./ProductCard";
 import style from "./ProductsTray.module.css";
 
@@ -17,7 +18,7 @@ const data = [
     color: ["red", "black", "green"],
     stock: 5,
     price: 1499,
-    id: "SRT120",
+    id: "SRT121",
     sizes: ["S", "M", "L", "XL", "XXL"],
   },
   {
@@ -26,7 +27,7 @@ const data = [
     color: ["red", "yellow", "green"],
     stock: 20,
     price: 999,
-    id: "T120",
+    id: "T122",
     sizes: ["S", "M", "L", "XL", "XXL"],
   },
   {
@@ -35,7 +36,7 @@ const data = [
     color: ["red", "yellow", "green"],
     stock: 20,
     price: 999,
-    id: "T120",
+    id: "T123",
     sizes: ["S", "M", "L", "XL", "XXL"],
   },
   {
@@ -44,7 +45,7 @@ const data = [
     color: ["red", "yellow", "green"],
     stock: 20,
     price: 999,
-    id: "T120",
+    id: "T124",
     sizes: ["S", "M", "L", "XL", "XXL"],
   },
   {
@@ -53,7 +54,7 @@ const data = [
     color: ["red", "yellow", "green"],
     stock: 20,
     price: 999,
-    id: "T120",
+    id: "T125",
     sizes: ["S", "M", "L", "XL", "XXL"],
   },
   {
@@ -62,12 +63,17 @@ const data = [
     color: ["red", "yellow", "green"],
     stock: 20,
     price: 999,
-    id: "T120",
+    id: "T126",
     sizes: ["S", "M", "L", "XL", "XXL"],
   },
 ];
 
-function ProductsTray({ heading, text }) {
+function ProductsTray({ heading, text, category }) {
+  const [list, setList] = useState([]);
+  useEffect(() => {
+    setList(data);
+  }, [category]);
+
   return (
     <div className={style.mainCntnr}>
       <div className={style.information}>
@@ -75,7 +81,7 @@ function ProductsTray({ heading, text }) {
         <p>{text}</p>
       </div>
       <div className={style.products}>
-        {data.map((curr, i) => (
+        {list.map((curr, i) => (
           <ProductCard
             key={i}
             img={curr.img}

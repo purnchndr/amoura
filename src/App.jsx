@@ -1,4 +1,9 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter,
+  HashRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
 import AmouraShopping from "./pages/AmouraShopping";
 import ProductDetails from "./pages/ProductDetails";
 import HomePage from "./pages/HomePage";
@@ -6,7 +11,8 @@ import HomePage from "./pages/HomePage";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <Router>
+        {/* <BrowserRouter> */}
         <Routes>
           <Route path="/" element={<HomePage />}></Route>
           <Route path="shop" element={<AmouraShopping />} />
@@ -15,7 +21,8 @@ function App() {
             element={<ProductDetails />}
           ></Route>
         </Routes>
-      </BrowserRouter>
+        {/* </BrowserRouter> */}
+      </Router>
     </>
   );
 }

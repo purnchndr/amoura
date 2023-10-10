@@ -2,9 +2,8 @@ import { Link } from "react-router-dom";
 import style from "./ProductCard.module.css";
 
 function ProductCard({ img, name, color, stock, price, id, sizes }) {
-  console.log(id);
   return (
-    <Link to={`products/${id}`} className={style.productCard}>
+    <Link to={`/shop/products/${id}`} className={style.productCard}>
       <div>
         <img className={style.productImage} src={img} alt={name} />
       </div>
