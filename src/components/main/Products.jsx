@@ -6,8 +6,6 @@ import ProductsTray from "../common/ProductsTray";
 import Categories from "../Catagories";
 
 function Products() {
-  const img =
-    "https://hebeboutique.com/cdn/shop/files/IMG_4872_1800x1800.webp.jpg?v=1695000973";
   return (
     <main className={styles.main}>
       <section>
@@ -15,10 +13,17 @@ function Products() {
         <MainSlideShow />
         <ProductsTray
           heading="Special for You"
-          text=" look smarter with these handpicked for you........"
+          text=" look smarter with these handpicked for you Tshirts........"
+        />
+        <ProductsTray
+          heading="Special for You"
+          text=" look smarter with these handpicked for you Shirts........"
+        />
+        <ProductsTray
+          heading="Special for You"
+          text=" look smarter with these handpicked for you shorts........"
         />
       </section>
-      <img src={img} width="100%" />
     </main>
   );
 }

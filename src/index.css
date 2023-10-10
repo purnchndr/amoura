@@ -1,9 +1,13 @@
 :root {
   --clr-dark: #434343;
   --clr-white: #dcdcdc;
-  --clr-primary: #faffe6;
+  --clr-primary: #d3ffc9;
   --clr-bg-dark: #232e00;
-  --clr-bg: #405500;
+  /* --clr-bg: #405500; */
+  --clr-bg: #121800;
+  --light-green: rgb(160, 255, 160);
+  --clr-green: #6bff6b;
+  --light-red: #ffafaf;
 }
 
 body {
@@ -32,6 +36,7 @@ h5 {
   font-weight: 100;
   padding: 0;
   margin: 3px 0;
+  color: var(--clr-green);
 }
 
 a {
@@ -58,6 +63,24 @@ a:after {
 a:hover:after {
   transform: scaleX(1);
   transform-origin: center;
+}
+
+.button {
+  background: var(--clr-bg);
+  color: var(--clr-green);
+  border: 1px solid var(--clr-green);
+  border-radius: 0.5rem;
+  padding: 7px;
+  margin: 2px 10px;
+}
+
+.primary {
+}
+
+.secondary {
+  background: var(--clr-green);
+  color: var(--clr-bg);
+  font-weight: bold;
 }
 
 /* Scroll Bar */

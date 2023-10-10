@@ -1,39 +1,145 @@
 .color {
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
   display: inline-block;
   border-radius: 50%;
   margin: 0 3px;
+  cursor: pointer;
+}
+
+.size {
+  padding: 2px 3px;
+  border: 1px solid var(--clr-primary);
+  margin: 0 5px;
+  cursor: pointer;
+}
+.sizeCntnr {
+  margin: 10px 0;
+  padding-right: 5px;
+}
+
+.colorCntnr {
+  margin: 10px 0;
+  padding-right: 5px;
 }
 
 .productPage {
   display: flex;
-  justify-content: space-between;
-  margin: 15px 10px;
+  justify-content: space-around;
+  margin: 20px 10px 40px 10px;
+  height: 90vh;
 }
 
 .imgCntnr {
   display: flex;
-  align-items: center;
+  height: inherit;
 }
 
 .navImg {
   width: 100px;
   height: 100px;
+  cursor: pointer;
+  padding: 3px;
+  margin: 3px;
+  border-radius: 1rem;
 }
 
 .navImgCntnr {
   display: flex;
   flex-direction: column;
   align-items: baseline;
-  width: fit-content;
-  background-color: black;
 }
 
 .mainImgCntnr {
   display: inline-block;
+  width: 460px;
+  height: 100%;
 }
 
 .mainImg {
-  width: 500px;
+  width: 100%;
+  max-height: 100%;
+
+  border-radius: 1rem;
+}
+
+.productInfo {
+  padding: 20px 40px;
+  height: 900px;
+}
+
+.productName {
+}
+
+.productPriceFull {
+  text-decoration: line-through;
+  opacity: 0.8;
+  padding-right: 10px;
+  color: var(--light-red);
+}
+.priceDiscount {
+  padding-left: 10px;
+  color: var(--light-green);
+}
+
+.productDescription {
+  margin: 10px 2px;
+}
+
+.reviewsCntnr {
+  height: 300px;
+  margin: 10px 2px;
+}
+
+.reviews {
+  margin: 10px 0;
+}
+
+.reviewProfile {
+  display: block;
+  color: var(--light-green);
+}
+.ratings {
+  overflow-y: scroll;
+  height: 170px;
+}
+.actionButtons {
+  width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .mainImgCntnr {
+    width: 350px;
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .productPage {
+    display: block;
+    height: fit-content;
+    margin: 10px 20px;
+  }
+  .productInfo {
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .navImgCntnr {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+
+  .imgCntnr {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .mainImgCntnr {
+    width: 100%;
+    height: 100%;
+  }
 }
