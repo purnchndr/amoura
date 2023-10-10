@@ -1,9 +1,4 @@
-import {
-  BrowserRouter,
-  HashRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter, Route, Router } from "react-router-dom";
 import AmouraShopping from "./pages/AmouraShopping";
 import ProductDetails from "./pages/ProductDetails";
 import HomePage from "./pages/HomePage";
@@ -11,18 +6,16 @@ import HomePage from "./pages/HomePage";
 function App() {
   return (
     <>
-      <Router>
-        {/* <BrowserRouter> */}
-        <Routes>
+      <BrowserRouter>
+        <Router>
           <Route path="/" element={<HomePage />}></Route>
           <Route path="shop" element={<AmouraShopping />} />
           <Route
             path="shop/products/:productid"
             element={<ProductDetails />}
           ></Route>
-        </Routes>
-        {/* </BrowserRouter> */}
-      </Router>
+        </Router>
+      </BrowserRouter>
     </>
   );
 }
