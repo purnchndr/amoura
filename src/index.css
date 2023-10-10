@@ -1,12 +1,22 @@
-:root {
+/* :root {
   --clr-dark: #434343;
   --clr-white: #dcdcdc;
   --clr-primary: #d3ffc9;
-  --clr-bg-dark: #232e00;
-  /* --clr-bg: #405500; */
+  --clr-bg-dark: #232e00; 
   --clr-bg: #121800;
   --light-green: rgb(160, 255, 160);
   --clr-green: #6bff6b;
+  --light-red: #ffafaf;
+} */
+
+:root {
+  --clr-dark: #434343;
+  --clr-white: #dedede;
+  --clr-primary: #000000;
+  --clr-bg-dark: #232e00;
+  --clr-bg: #ffffff;
+  --light-green: rgb(0 92 0);
+  --clr-green: #008600;
   --light-red: #ffafaf;
 }
 
@@ -16,8 +26,8 @@ body {
   box-sizing: border-box;
   position: relative;
   color: var(--clr-primary);
-  font-family: "Montserrat", sans-serif;
-  font-weight: 200;
+  font-family: Arial, "Montserrat", sans-serif;
+  font-weight: 400;
   font-size: 13px;
   background-color: var(--clr-bg);
 }
@@ -72,6 +82,7 @@ a:hover:after {
   border-radius: 0.5rem;
   padding: 7px;
   margin: 2px 10px;
+  cursor: pointer;
 }
 
 .primary {
@@ -85,13 +96,13 @@ a:hover:after {
 
 /* Scroll Bar */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--clr-bg-dark);
+  background: rgb(194, 255, 191);
 }
 ::-webkit-scrollbar-thumb {
-  background: #000000;
+  background: #395c3265;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
